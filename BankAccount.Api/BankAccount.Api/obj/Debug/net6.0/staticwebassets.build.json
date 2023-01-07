@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "hd4hsGrf+9ymPajw45PJjb6BaVXkir5NbcY4DELQyNo=",
+  "Source": "BankAccount.Api",
+  "BasePath": "_content/BankAccount.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BankAccount.Api\\wwwroot",
+      "Source": "BankAccount.Api",
+      "ContentRoot": "C:\\Users\\crisb\\source\\repos\\AccountBalances\\BankAccount.Api\\BankAccount.Api\\wwwroot\\",
+      "BasePath": "_content/BankAccount.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

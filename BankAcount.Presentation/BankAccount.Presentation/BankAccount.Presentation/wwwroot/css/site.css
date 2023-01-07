@@ -1,0 +1,85 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.buttonLoginBox {
+    position:absolute;
+    margin: 0 auto;
+    top:160%;
+    left:10%;
+}
+.loginBox {
+    position: absolute;
+    margin: 0 auto;
+    left: 40%;
+    top: 50%;
+    height: 200px;
+    margin-top: -100px;
+    width:150vh;
+}
+.imageLogoLogin{
+    width:70%;
+    margin-left:15%;
+    margin-top:-10%;
+}
+
+.imageLogoLoginBox{
+
+}
+
+.loginButton{
+    color:rgb(1, 1, 1);
+    background:rgb(128, 128, 128);
+    border:hidden;
+   
+}
+
+loginButton:active, .loginButton:hover {
+    color: rgb(1, 1, 1) !important;
+    background: rgb(102, 113, 117) !important;
+    border: hidden;
+}
+.registerLink {
+    position: absolute;
+    margin: 0 auto;
+    top: 180%;
+    left: 10%;
+}
+.linkRedirectLogin{
+
+}
+
+.detailsBox {
+    left: 30%;
+    position:relative;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .imageLogoLogin {
+        background-color: lightblue;
+        width:20%;
+    }
+}
+@media only screen and (max-width: 701px) {
+    .buttonLoginBox {
+        position: absolute;
+        margin: 0 auto;
+        top: 120%;
+        left: 25%;
+    }
+}

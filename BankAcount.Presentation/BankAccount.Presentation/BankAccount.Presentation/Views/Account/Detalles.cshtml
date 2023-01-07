@@ -1,0 +1,168 @@
+﻿@model BankAccount.Data.Entity.User
+
+@{
+    ViewData["Title"] = "Detalles";
+}
+
+<h1>Detalles</h1>
+
+<h4>User</h4>
+<hr />
+<div>
+    <ul>   
+    
+    @{
+           if (TempData["ValErrors"]!=null)
+            foreach (var validationError in System.Text.Json.JsonSerializer.Deserialize<IEnumerable<string>>(TempData["ValErrors"].ToString()) as IEnumerable<string>)
+            {
+                 <li style="color:red;">@validationError</li>
+            }
+     }
+    </ul>
+
+</div>
+<div class="row detailsBox">
+    <div class="col col-md-6">
+        <form onsubmit="return false;" id="detailsForm" asp-action="Detalles" asp-controller="Account">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserId" class="control-label"></label>
+                <input asp-for="UserId" class="form-control" disabled/>
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="first" class="control-label"></label>
+                <input asp-for="first" class="form-control" />
+                <span asp-validation-for="first" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="last" class="control-label"></label>
+                <input asp-for="last" class="form-control" />
+                <span asp-validation-for="last" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="age" class="control-label"></label>
+                <input asp-for="age" class="form-control" />
+                <span asp-validation-for="age" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="address" class="control-label"></label>
+                <input asp-for="address" class="form-control" />
+                <span asp-validation-for="address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="eyeColor" class="control-label"></label>
+                <input asp-for="eyeColor" class="form-control" />
+                <span asp-validation-for="eyeColor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="company" class="control-label"></label>
+                <input asp-for="company" class="form-control" />
+                <span asp-validation-for="company" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="email" class="control-label"></label>
+                <input asp-for="email" class="form-control" />
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="password" class="control-label"></label>
+                <input asp-for="password" class="form-control" />
+                <span asp-validation-for="password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="phone" class="control-label"></label>
+                <input asp-for="phone" class="form-control" />
+                <span asp-validation-for="phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="picture" class="control-label"></label>
+                <input asp-for="picture" class="form-control" />
+                <span asp-validation-for="picture" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="isActiveUser" class="control-label"></label>
+                <input id="isActiveUser" name="isActiveUser" type="checkbox" class="form-check-input" @((Model?.isActiveUser ??false) ? "checked":"") />
+                <span asp-validation-for="isActiveUser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" onclick="submitForm(event)" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    <script>
+        function submitForm(e) {
+            e.preventDefault();
+            console.log($("#isActiveUser"))
+            let u = {
+                'UserId': $("#detailsForm #UserId").val(),
+                'first': $("#detailsForm #first").val(),
+                'last': $("#detailsForm #last").val(),
+                'age': $("#detailsForm #age").val(),
+                'address': $("#detailsForm #address").val(),
+                'eyeColor': $("#detailsForm #eyeColor").val(),
+                'company': $("#detailsForm #company").val(),
+                'email': $("#detailsForm #email").val(),
+                'password': $("#detailsForm #password").val(),
+                'phone': $("#detailsForm #phone").val(),
+                'picture': $("#detailsForm #picture").val(),
+                'isActiveUser': $("#isActiveUser:checked").val() == 'on' ? true : false,
+                'Accounts': null
+
+            }
+            $.ajax({
+
+                type: "POST",
+                url: '/Account/Detalles',
+                data: JSON.stringify(u),
+                contentType: "application/json",
+                datatype: "json",
+                success: function (result) {
+                    console.log(result.statusCode);
+                    if(result.statusCode==200)
+                    {
+                      window.location.href = '/home/index';
+                        console.log(result.data.statusCode);
+                        window.location.replace('/home/index');
+                    }
+                    else
+                    {
+                        $("#detailsForm #UserId").val(result.data.userId);
+                        $("#detailsForm #first").val(result.data.first);
+                        $("#detailsForm #last").val(result.data.last);
+                        $("#detailsForm #age").val(result.data.age);
+                        $("#detailsForm #address").val(result.data.address);
+                        $("#detailsForm #eyeColor").val(result.data.eyeColor);
+                        $("#detailsForm #company").val(result.data.company);
+                        $("#detailsForm #email").val(result.data.email);
+                        $("#detailsForm #password").val(result.data.password);
+                        $("#detailsForm #phone").val(result.data.phone);
+                        $("#detailsForm #picture").val(result.data.picture);
+                        let errors = []
+                        errors.push('Several validation Errors')
+                        for(const err of result.validation)
+                        {
+                            errors.push(err);
+                        }
+                        console.log(errors.join(',\n'));
+                        alert(errors.join(','))
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                   
+                    console.log(jqXHR.responseText)
+
+                }
+
+            })
+        }
+    </script>
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,22 @@
+﻿@model BankAccount.Data.Entity.User
+@inject SignInManager<ApplicationUser> _signInManager
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    @if (_signInManager.IsSignedIn(User) && Model == null || Model == null)
+    {
+        <p>Please  <a class="nav-link" style="color:blue;" asp-action="Login" asp-controller="Account"> Login</a></p>
+    }
+    else
+    {
+        <img src="@Model.picture" style="max-height:50px;max-width:50px;margin-top:10%;"  />
+        <div style="margin-top:10%;">@($"{Model.first} {Model.last}")</div>
+        <div   class="container" style="margin-top:5%;">
+            <a href="#" class="btn btn-light">Balance</a> <a class="btn btn-light" style="margin-left:10%;" href="/Account/Detalles">Editar</a>
+        </div>
+    }
+</div>

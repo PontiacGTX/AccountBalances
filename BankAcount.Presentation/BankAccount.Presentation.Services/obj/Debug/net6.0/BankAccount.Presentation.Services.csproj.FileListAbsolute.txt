@@ -1,0 +1,17 @@
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation.Services\bin\Debug\net6.0\BankAccount.Presentation.Services.deps.json
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation.Services\bin\Debug\net6.0\BankAccount.Presentation.Services.dll
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation.Services\bin\Debug\net6.0\BankAccount.Presentation.Services.pdb
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation.Services\bin\Debug\net6.0\BankAccount.Common.dll
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation.Services\bin\Debug\net6.0\BankAccount.Data.dll
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation.Services\bin\Debug\net6.0\BankAccount.Common.pdb
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation.Services\bin\Debug\net6.0\BankAccount.Data.pdb
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation.Services\obj\Debug\net6.0\BankAccount.Presentation.Services.csproj.AssemblyReference.cache
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation.Services\obj\Debug\net6.0\BankAccount.Presentation.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation.Services\obj\Debug\net6.0\BankAccount.Presentation.Services.AssemblyInfoInputs.cache
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation.Services\obj\Debug\net6.0\BankAccount.Presentation.Services.AssemblyInfo.cs
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation.Services\obj\Debug\net6.0\BankAccount.Presentation.Services.csproj.CoreCompileInputs.cache
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation.Services\obj\Debug\net6.0\BankAccount.Presentation.Services.csproj.CopyComplete
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation.Services\obj\Debug\net6.0\BankAccount.Presentation.Services.dll
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation.Services\obj\Debug\net6.0\refint\BankAccount.Presentation.Services.dll
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation.Services\obj\Debug\net6.0\BankAccount.Presentation.Services.pdb
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation.Services\obj\Debug\net6.0\ref\BankAccount.Presentation.Services.dll

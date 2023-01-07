@@ -1,0 +1,52 @@
+﻿@model BankAccount.Data.Model.LoginModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+
+<div class="row loginBox">
+    <div class="col-md-3">
+        <div class="form-group imageLogoLoginBox">
+            <img src="~/img/logo.png" class="imageLogoLogin" />
+        </div>
+        <form asp-action="Login" asp-controller="Account" method="post">
+           
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group" style="max-width:80%;margin:0 auto;">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="max-width:80%;margin:0 auto;">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" type="password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group buttonLoginBox">
+                <input type="submit" value="Login" class="btn btn-primary loginButton" />
+            </div>
+             @if (ViewContext.ViewData.ModelState["email"]!=null && ViewContext.ViewData.ModelState["email"].Errors.Any(x => x.ErrorMessage == "email not found"))
+            {
+                <div class="registerLink">
+                    <a asp-controller="Account" asp-action="Register" class="link-primary linkRedirectLogin" id="registrationLink" style="pointer-events:none">Register ?</a>
+             </div>
+            }
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    <script>
+    function func(){
+            let strUs = '@Html.Raw(System.Text.Json.JsonSerializer.Serialize(ViewBag.Users))';
+            console.log(strUs);
+    }
+
+    func();
+    </script>
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

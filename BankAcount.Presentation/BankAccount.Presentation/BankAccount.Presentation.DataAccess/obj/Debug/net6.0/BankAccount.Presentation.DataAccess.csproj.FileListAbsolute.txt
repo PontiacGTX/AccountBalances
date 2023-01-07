@@ -1,0 +1,17 @@
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation\BankAccount.Presentation.DataAccess\bin\Debug\net6.0\BankAccount.Presentation.DataAccess.deps.json
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation\BankAccount.Presentation.DataAccess\bin\Debug\net6.0\BankAccount.Presentation.DataAccess.dll
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation\BankAccount.Presentation.DataAccess\bin\Debug\net6.0\BankAccount.Presentation.DataAccess.pdb
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation\BankAccount.Presentation.DataAccess\bin\Debug\net6.0\BankAccount.Common.dll
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation\BankAccount.Presentation.DataAccess\bin\Debug\net6.0\BankAccount.Data.dll
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation\BankAccount.Presentation.DataAccess\bin\Debug\net6.0\BankAccount.Common.pdb
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation\BankAccount.Presentation.DataAccess\bin\Debug\net6.0\BankAccount.Data.pdb
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation\BankAccount.Presentation.DataAccess\obj\Debug\net6.0\BankAccount.Presentation.DataAccess.csproj.AssemblyReference.cache
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation\BankAccount.Presentation.DataAccess\obj\Debug\net6.0\BankAccount.Presentation.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation\BankAccount.Presentation.DataAccess\obj\Debug\net6.0\BankAccount.Presentation.DataAccess.AssemblyInfoInputs.cache
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation\BankAccount.Presentation.DataAccess\obj\Debug\net6.0\BankAccount.Presentation.DataAccess.AssemblyInfo.cs
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation\BankAccount.Presentation.DataAccess\obj\Debug\net6.0\BankAccount.Presentation.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation\BankAccount.Presentation.DataAccess\obj\Debug\net6.0\BankAccount.Presentation.DataAccess.csproj.CopyComplete
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation\BankAccount.Presentation.DataAccess\obj\Debug\net6.0\BankAccount.Presentation.DataAccess.dll
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation\BankAccount.Presentation.DataAccess\obj\Debug\net6.0\refint\BankAccount.Presentation.DataAccess.dll
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation\BankAccount.Presentation.DataAccess\obj\Debug\net6.0\BankAccount.Presentation.DataAccess.pdb
+C:\Users\crisb\source\repos\AccountBalances\BankAcount.Presentation\BankAccount.Presentation\BankAccount.Presentation.DataAccess\obj\Debug\net6.0\ref\BankAccount.Presentation.DataAccess.dll
